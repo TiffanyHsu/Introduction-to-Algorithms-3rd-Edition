@@ -1,0 +1,15 @@
+public class MyClass
+{
+    public static void main(String args[])
+    {
+        int array[]={31,41,59,26,41,58};
+        int v=59;
+        for(int i=0; i<array.length; i++)
+        {
+            if(array[i]==v)
+            {
+                System.out.println(i);
+            }
+        }
+    }
+}
