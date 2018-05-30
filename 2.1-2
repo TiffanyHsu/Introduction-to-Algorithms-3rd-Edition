@@ -1,0 +1,27 @@
+public class MyClass 
+{
+    public static void main(String args[]) 
+    {
+        int array[]={31,41,59,26,41,58};
+        int j, key;
+        for(int i=0; i<array.length; i++)
+        {
+            j=i-1;
+            key=array[i];
+            while(j>=0)
+            {
+                if(array[j]>key)
+                {
+                    array[j]=key;
+                    System.out.println(array[j]);
+                    break;
+                }
+                else
+                {
+                    System.out.println(array[j]);
+                    break;
+                }
+            }
+        }
+    }
+}
