@@ -1,63 +1,15 @@
-public class MyClass 
-{
-    public static void main(String args[]) 
-    {
-        int array[]={31,41,59,26,41,58};
-        int j, key;
-        for(int i=0; i<array.length; i++)
-        {
-            j=i-1;
-            key=array[i];
-            while(j>=0)
-            {
-                if(array[j]>key)
-                {
-                    array[j]=key;
-                    System.out.println(array[j]);
-                    break;
-                }
-                else
-                {
-                    System.out.println(array[j]);
-                    break;
-                }
-            }
-        }
-    }
-}
+def insertion_sort(list):
+  for i in range (1, len(list)):
+    key = list[i]
+    j = i-1
+    while j >= 0:
+      if list[j] > key:
+        list[j+1] = list[j] #shift number in slot j right to slot j+1
+        list[j] = key #shift number left to slot j
+        j = j-1
+      else:
+        break
 
-
-public class MyClass 
-{
-    public static void main(String args[]) 
-    {
-        int array [] = {31,41,11,26};
-        int min=array[0];
-        int n1=array[0];
-        int n2=array[0];
-        int max=array[0];
-        for(int i=0; i<array.length; i++)
-        {
-            if(array[i]<min)
-            {
-                min=array[i];
-            }
-            else if(n1 != min && array[i]<n1)
-            {
-                n1=array[i];
-            }
-            else if(n2 != min && n2 != n1 && array[i]<n2)
-            {
-                n2=array[i];
-            }
-            else if(array[i]>max)
-            {
-                max=array[i];
-            }
-        }
-        System.out.println(min);
-        System.out.println(n1);
-        System.out.println(n2);
-        System.out.println(max);
-    }
-}
+list_arr = [31,41,59,26,41,58]
+insertion_sort(list_arr)
+print(list_arr)
