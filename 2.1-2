@@ -5,7 +5,7 @@ def insertion_sort(list):
     while j >= 0:
       if list[j] > key:
         list[j+1] = list[j] #shift number in slot j right to slot j+1
-        list[j] = key #shift number left to slot j
+        list[j] = key #shift key left to slot j
         j = j-1
       else:
         break
